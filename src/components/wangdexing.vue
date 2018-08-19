@@ -1,6 +1,6 @@
 <template>
   <div id="wangdexing">
-{{wangdexing}}
+    <h1>{{wangdexing}}</h1>
   </div>
 </template>
 
@@ -10,7 +10,7 @@ export default {
   name: 'wangdexing',
   data(){
     return{
-      wangdexing:"wangdexing chenyujie"
+      wangdexing:"我是王德兴！"
     }
   },
   mounted(){

@@ -1,6 +1,6 @@
 <template>
 <div>
- <h1>{{title}}</h1>
+ <h1>我是陈玉杰！</h1>
  <button @click="emitNews()">getParentInfo</button>
 </div>
 </template>

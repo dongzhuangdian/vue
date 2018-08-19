@@ -1,11 +1,15 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <!-- <img src="./assets/logo.png">
 	<h1>王德兴</h1>
   <chenyujie ref="chenyujie"></chenyujie>
   <wangdexing></wangdexing>
-  <button @click="getChildInfo()">getchildinfo</button>
-<router-view/>
+  <button @click="getChildInfo()">getchildinfo</button> -->
+  <router-link :to="{ path: '*', component: wangdexing}">wangdexing</router-link>
+  <router-link :to="{ path: '/chenyujie', component: chenyujie }">chenyujie</router-link>
+    <router-link :to="{ path: '/hello', component: HelloWorld }">hello</router-link>
+
+  <router-view/>
   </div>
 </template>
 
