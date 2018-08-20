@@ -13,7 +13,7 @@ export default new VueRouter1({
       name: 'HelloWorld',
       component: HelloWorld
     },
-    { path: '/wangdexing', component: wangdexing },
+    { path: '*', component: wangdexing },
     { path: '/chenyujie', component: chenyujie },
     { path: '/hello', component: HelloWorld }
   ]

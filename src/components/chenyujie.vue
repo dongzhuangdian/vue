@@ -1,6 +1,7 @@
 <template>
 <div>
  <h1>我是陈玉杰！</h1>
+ <h2>{{para}}</h2>
  <button @click="emitNews()">getParentInfo</button>
 </div>
 </template>
@@ -11,7 +12,8 @@ export default {
   name: 'chenyujie',
   data(){
     return{
-      msg:"chenyujie"
+      msg:"chenyujie",
+      para:""
     }
   },
   props:["title"],
@@ -24,7 +26,10 @@ export default {
                 VueEvent.$emit('to_wangdexing',this.msg)
 
             }
-        }
+  },
+  mounted(){
+     alert(this.$route.query.aid)
+  }
 
 }
 </script>

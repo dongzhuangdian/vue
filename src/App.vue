@@ -5,8 +5,8 @@
   <chenyujie ref="chenyujie"></chenyujie>
   <wangdexing></wangdexing>
   <button @click="getChildInfo()">getchildinfo</button> -->
-  <router-link :to="{ path: '*', component: wangdexing}">wangdexing</router-link>
-  <router-link :to="{ path: '/chenyujie', component: chenyujie }">chenyujie</router-link>
+  <router-link :to="{ path: '/wangdexing', component: wangdexing}">wangdexing</router-link>
+  <router-link :to="{ path: '/chenyujie?aid=123', component: chenyujie }">chenyujie</router-link>
     <router-link :to="{ path: '/hello', component: HelloWorld }">hello</router-link>
 
   <router-view/>
