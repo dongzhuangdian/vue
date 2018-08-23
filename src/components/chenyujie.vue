@@ -1,5 +1,5 @@
 <template>
-<div>
+<div id=chenyujie>
  <h1>我是陈玉杰！</h1>
  <h2>{{para}}</h2>
  <button @click="emitNews()">getParentInfo</button>
@@ -26,10 +26,18 @@ export default {
                 VueEvent.$emit('to_wangdexing',this.msg)
 
             }
-  },
-  mounted(){
-     alert(this.$route.query.aid)
   }
 
 }
 </script>
+
+<style>
+#chenyujie {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: left;
+  color: #2c3e50;
+
+}
+</style>

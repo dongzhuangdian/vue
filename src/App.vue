@@ -6,9 +6,9 @@
   <wangdexing></wangdexing>
   <button @click="getChildInfo()">getchildinfo</button> -->
   <router-link :to="{ path: '/wangdexing', component: wangdexing}">wangdexing</router-link>
-  <router-link :to="{ path: '/chenyujie?aid=123', component: chenyujie }">chenyujie</router-link>
-    <router-link :to="{ path: '/hello', component: HelloWorld }">hello</router-link>
-
+  <router-link :to="{ path: '/chenyujie', component: chenyujie }">chenyujie</router-link>
+  <router-link :to="{ path: '/hello', component: HelloWorld }">hello</router-link>
+  <router-link :to="{ path: '/user/useradd' }">user</router-link>
   <router-view/>
   </div>
 </template>
@@ -42,6 +42,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+
 }
 </style>
